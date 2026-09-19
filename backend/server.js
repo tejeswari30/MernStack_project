@@ -14,6 +14,7 @@ app.use(cors()); // allows frontend requests.
 app.use(express.json()); // converts frontend JSON data into JavaScript object
 
 const server = http.createServer(app);
+
 /* HTTP server is created because Socket.IO needs server connection.
 Socket.IO enables real-time features. */
 
