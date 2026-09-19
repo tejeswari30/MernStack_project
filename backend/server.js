@@ -137,7 +137,7 @@ io.on("connection", (socket) => {
     console.log(`Socket ${socket.id} joined ${sessionCode}`);
   });
 
-  // ✅ Student sends question
+  //  Student sends question
   socket.on("newQuestion", async (data) => {
     try {
       const question = new Question({
@@ -165,7 +165,7 @@ io.on("connection", (socket) => {
 
       const newAnswer = new Answer({
         sessionCode,
-        questionId, // 🔥 LINK
+        questionId, // LINK
         answer,
       });
 
@@ -186,7 +186,7 @@ io.on("connection", (socket) => {
 });
 
 
-// ================= START SERVER =================
+//----------------- START SERVER ---------------------
 
 const PORT = process.env.PORT || 5000;
 
