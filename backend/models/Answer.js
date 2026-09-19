@@ -7,7 +7,7 @@ const answerSchema = new mongoose.Schema(
       required: true,
     },
 
-    // 🔥 Link answer to specific question
+    //  Link answer to specific question
     questionId: {
       type: mongoose.Schema.Types.ObjectId,
       ref: "Question",
@@ -20,7 +20,7 @@ const answerSchema = new mongoose.Schema(
     },
   },
   {
-    timestamps: true, // ✅ adds createdAt & updatedAt
+    timestamps: true, // adds createdAt & updatedAt
   }
 );
 
