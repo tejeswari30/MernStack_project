@@ -23,6 +23,7 @@ const io = new Server(server, {
     methods: ["GET", "POST"],
   },
 });
+
 // This setup is used for live communication between teacher and student
 
 
