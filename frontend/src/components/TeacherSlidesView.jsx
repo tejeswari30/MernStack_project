@@ -58,7 +58,7 @@ const TeacherSlidesView = () => {
     }
   };
 
-  // ✅ FIXED: send questionId also
+  //  FIXED: send questionId also
   const handleAnswerSubmit = () => {
     if (!answer.trim()) return;
 
@@ -66,7 +66,7 @@ const TeacherSlidesView = () => {
 
     socketRef.current.emit("newAnswer", {
       sessionCode: sessionCode,
-      questionId: currentQuestion._id, // 🔥 IMPORTANT FIX
+      questionId: currentQuestion._id, //  IMPORTANT FIX
       answer: answer,
     });
 
