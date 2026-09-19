@@ -126,7 +126,7 @@ app.get("/api/sessions/:sessionId/questions", async (req, res) => {
 });
 
 
-// ================= SOCKET.IO =================
+// ------------------- SOCKET.IO --------------------
 
 io.on("connection", (socket) => {
   console.log("User connected:", socket.id);
